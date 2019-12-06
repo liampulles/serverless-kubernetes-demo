@@ -24,4 +24,15 @@ plugins:
 
 functions:
   pig-latinize:
-    handler: handler.pigLatinize
+    handler: latin.pigLatinize
+
+  box:
+    handler: box.box
+  
+  chain:
+    handler: chain.chain
+
+  chained-local:
+    sequence:
+      - pig-latinize
+      - box

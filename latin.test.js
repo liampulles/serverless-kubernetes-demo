@@ -1,4 +1,4 @@
-const handler = require('./handler');
+const handler = require('./latin');
 
 function wrapInEvent(text) {
   return { data: text };
